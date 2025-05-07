@@ -1,0 +1,45 @@
+* Need below tables
+
+# instituteTypes
+
+id: PK, Auto generate
+name: VARCHAR(50),
+
+# boardList
+
+id: PK, Auto generate
+name: ENUM("GSAB", "CBSE")
+
+# mediums
+
+id: PK, Auto generate
+name: ENUM("English", "Gujarati", "Hindi")
+
+# classes
+
+id: PK, Auto generate
+name: Varchar(50)
+
+# standards
+
+id: 
+name:
+type
+
+standardClasses(Normalization Table)
+
+id:
+# classes
+classId: FK -> classes
+standardId: FK -> standards
+
+# subjects
+
+id: 
+name: 
+
+# standardSubjects(Normalization table)
+
+id: 
+standardId: FK -> standards
+subjectId: FK -> subjects
